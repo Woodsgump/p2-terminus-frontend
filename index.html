@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fake Store Api Test</title>
@@ -11,8 +9,8 @@
 
 <body>
     <div class="d-flex justify-content-center">
-        <div class="spinner-border" role="status" id="loading">
-            <span class="sr-only">Loading...</span>
+        <div class="spinner-border" id="loading">
+            <span class="loading">Loading...</span>
         </div>
     </div>
     <h1>Fake Store Products</h1>
@@ -24,14 +22,18 @@
     const all_url =
         "https://fakestoreapi.com/products/";
 
+    //
+    getAllProducts(all_url);
 
+
+    //
     async function getAllProducts(url) {
 
         // Storing response
-        const response = await fetch(url);
+        let response = await fetch(url);
 
         // Storing data in form of JSON
-        const data = await response.json();
+        let data = await response.json();
         console.log(data);
         if (response) {
             hideloader();
@@ -39,13 +41,11 @@
         showAllProducts(data);
     }
 
+
+    //
     async function getProduct(id) {
-
-        // Storing response
-        const response = await fetch(`${all_url}${id}`);
-
-        // Storing data in form of JSON
-        const data = await response.json();
+        let response = await fetch(`${all_url}${id}`);
+        let data = await response.json();
         console.log(data);
         if (response) {
             hideloader();
@@ -53,16 +53,8 @@
         showProduct(data);
     }
 
-    getAllProducts(all_url);
 
-
-
-    // Function to hide the loader
-    function hideloader() {
-        document.getElementById('loading').style.display = 'none';
-    }
-
-
+    //
     function showProduct(data) {
         let tab =
             `<tr>
@@ -71,21 +63,17 @@
           <th>Rating</th>
           <th>Price</th>
         </tr>`;
-
-
-
         tab += `<tr> 
-    <td>
+        <td>
         <h3>${data.title}</h3>
         <i>Category: </i> ${data.category}
         <p><img style='max-width:200px;height:auto;' src='${data.image}'></p>
-    </td> 
-    <td>${data.description}</td>
-    <td>${data.rating.rate} (${data.rating.count} ratings)</td>    
-    <td>${data.price}</td>              
-    </tr>`;
+        </td> 
+        <td>${data.description}</td>
+        <td>${data.rating.rate} (${data.rating.count} ratings)</td>    
+        <td>${data.price}</td>              
+        </tr>`;
 
-        // Setting innerHTML as tab variable
         document.getElementById("products").innerHTML = tab;
     }
 
@@ -109,8 +97,12 @@
             </tr>`;
         }
 
-        // Setting innerHTML as tab variable
         document.getElementById("products").innerHTML = tab;
+    }
+
+    //
+    function hideloader() {
+        document.getElementById('loading').style.display = 'none';
     }
 </script>
 
