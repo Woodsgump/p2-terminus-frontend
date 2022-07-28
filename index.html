@@ -2,17 +2,29 @@
 <html lang="en">
 
 <head>
+
+    <!-- Meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- JavaScript Libaries -->
     <script src="lib/script.js" defer></script>
     <script src="lib/store.js" defer></script>
     <script src="lib/auth.js" defer></script>
+
+    <!-- Third party icons from font awesome -->
     <script src="assets/js/74de4910c5.js" crossorigin="anonymous"></script>
+
+    <!-- Style Assets -->
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Fake Store Api Test</title>
 </head>
 
 <body>
+    <!-- 
+        Header Container with logo, navigation, etc.
+     -->
     <div id="container">
         <h1 style="margin-top:2em;">Terminus Store</h1>
         <nav>
@@ -20,9 +32,12 @@
                 <li class="logo">
                     &nbsp;
                 </li>
+
+                <!-- Regular menu items -->
                 <li class="item"><a id="storeNav" href="#">Store Home</a></li>
                 <li class="item"><a id="catNav" href="#">Categories</a></li>
-                </li>
+
+                <!-- Submenu -->
                 <li class="item has-submenu">
                     <a tabindex="0">My Account</a>
                     <ul class="submenu">
@@ -31,6 +46,7 @@
                     </ul>
                 </li>
 
+                <!-- Login/Signup Buttons -->
                 <li class="item button"><a id="loginNav" href="#">log in</a></li>
                 <li class="item button secondary"><a id="signupNav" href="#">register</a></li>
                 <li class="toggle">
@@ -39,20 +55,29 @@
             </ul>
         </nav>
 
-
+        <!-- loading message while fetching -->
         <div id="loading">
             Loading...
         </div>
-        <!--Login, register-->
-        <div id="accountContainer">
+
+
+        <!-- 
+
+            This is where we load in html resources from assets/html/ 
+        
+        -->
+
+        <div id="contentContainer">
 
         </div>
 
-        <!---Store container --->
-        <div id="storeContainer">
-            <div id="products" cellpadding="15" style="margin-top:1em;">
+        <!--
 
-            </div>
+            Store container | html is loaded in from lib/store.js
+            
+        -->
+        <div id="storeContainer">
+
         </div>
     </div>
 </body>
