@@ -4,104 +4,33 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="lib/script.js" defer></script>
+    <script src="lib/store.js" defer></script>
+    <script src="lib/auth.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Fake Store Api Test</title>
 </head>
 
 <body>
-    <div id="loading">
-        Loading...
+    <h1>Terminus Store</h1>
+
+    <nav>
+        <h4>Account</h4>
+        <ul>
+            <li><a id="loginNav" href="#">Login</a></li>
+            <li><a id="registerNav" href="#">Register</a></li>
+        </ul>
+
+        <h4>Store</h4>
+        <ul>
+            <li> <a href="#">Categories</a></li>
+        </ul>
+    </nav>
+
+    <div id="htmlContainer">
+
+
     </div>
-    <h1>Fake Store Products</h1>
-
-    <table width="75%" align="center" id="products" cellpadding="15"></table>
 </body>
-<script>
-    // all products
-    const all_url =
-        "https://fakestoreapi.com/products/";
-
-    //
-    getAllProducts(all_url);
-
-
-    //
-    async function getAllProducts(url) {
-
-        // Storing response
-        let response = await fetch(url);
-
-        // Storing data in form of JSON
-        let data = await response.json();
-        console.log(data);
-        if (response) {
-            hideloader();
-        }
-        showAllProducts(data);
-    }
-
-
-    //
-    async function getProduct(id) {
-        let response = await fetch(`${all_url}${id}`);
-        let data = await response.json();
-        console.log(data);
-        if (response) {
-            hideloader();
-        }
-        showProduct(data);
-    }
-
-
-    //
-    function showProduct(data) {
-        let tab =
-            `<tr>
-          <th>Product</th>
-          <th>Description</th>
-          <th>Rating</th>
-          <th>Price</th>
-        </tr>`;
-        tab += `<tr> 
-        <td>
-        <h3>${data.title}</h3>
-        <i>Category: </i> ${data.category}
-        <p><img style='max-width:200px;height:auto;' src='${data.image}'></p>
-        </td> 
-        <td>${data.description}</td>
-        <td>${data.rating.rate} (${data.rating.count} ratings)</td>    
-        <td>${data.price}</td>              
-        </tr>`;
-
-        document.getElementById("products").innerHTML = tab;
-    }
-
-    //
-    function showAllProducts(data) {
-        let tab =
-            `<tr>
-          <th>Image</th>
-          <th>Product</th>
-          <th>Rating</th>
-          <th>Price</th>
-        </tr>`;
-
-
-        for (let r of data) {
-            tab += `<tr> 
-            <td><img style='max-width:100px;height:auto;' src='${r.image}'></td>
-            <td><h3><a href='#' onclick='getProduct(${r.id})'>${r.title}</a></h3></td>
-            <td>${r.rating.rate} (${r.rating.count} ratings)</td>    
-            <td>$${r.price}</td>              
-            </tr>`;
-        }
-
-        document.getElementById("products").innerHTML = tab;
-    }
-
-    //
-    function hideloader() {
-        document.getElementById('loading').style.display = 'none';
-    }
-</script>
 
 </html>
