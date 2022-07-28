@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@font-face {
+    font-family: "WoR";
+    src: url("Jackport_Regular_NCV.woff") format("woff");
+}
+
+:root {
+    color-scheme: dark;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+input[type="submit"] {
+    font-size: 1rem;
+    padding: 0.7em !important;
+    background: rgb(25, 32, 43);
+    color: #e1e1e1;
+    border: 1px #2f4d70 solid;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(38, 58, 88);
+}
+
+input[type="checkbox"] {
+    margin: 1em;
+}
+
+.top-logo {
+    margin-top: 1em;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: -0.33em;
+    user-select: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 0.5em !important;
+    background: rgb(25, 32, 43);
+    color: #426a97;
+    border: 1px #2f4d70 solid;
+    border-radius: 0.3em;
+}
+
+::placeholder {
+    color: #426a978a;
+    font-style: italic;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: rgb(25, 32, 43);
+    color: #e1e1e1;
+    max-width: 75vw;
+    margin: auto;
+}
+
+nav {
+    margin-top: 3em;
+    background: #243447;
+    padding: 0 15px;
+    border: 1px solid #2f4d70;
+    border-radius: 0.3em;
+    box-shadow: inset 0px 0 14px 0px #00000040, 0 0 5px 2px #00000038;
+    user-select: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu,
+.submenu {
+    list-style-type: none;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.item {
+    padding: 10px;
+}
+
+.item.button {
+    padding: 9px 5px;
+}
+
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: #ccc;
+}
+
+
+/* Mobile menu */
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.menu li.subitem a {
+    padding: 15px;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .item {
+    display: block;
+}
+
+.button.secondary {
+    /* divider between buttons and menu links */
+    border-bottom: 1px #2f4d70 solid;
+}
+
+
+/* Submenu up from mobile screens */
+
+.submenu {
+    display: none;
+}
+
+.submenu-active .submenu {
+    display: block;
+}
+
+.has-submenu i {
+    font-size: 12px;
+}
+
+.has-submenu>a::after {
+    font: var(--fa-font-solid);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color: white;
+    padding-left: 5px;
+}
+
+.subitem a {
+    padding: 10px 15px;
+}
+
+.submenu-active {
+    background-color: #191f26;
+    border-radius: 0.8rem;
+}
+
+p {
+    margin: 1em;
+}
+
+.success-text {
+    color: #8eff82;
+}
+
+.warning-text {
+    color: #ff6f38;
+}
+
+.info-text {
+    color: #386dff;
+}
+
+
+/* !responsive mobile */
+
+@media only screen and (max-width: 600px) {
+    .column {
+        width: 95%;
+    }
+    body {
+        max-width: 95vw !important;
+    }
+    nav {
+        margin-top: 1em !important;
+    }
+}
+
+
+/* Tablet menu */
+
+@media all and (min-width: 700px) {
+    .menu {
+        justify-content: center;
+    }
+    .logo {
+        flex: 1;
+    }
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+    /* Button up from tablet screen */
+    .menu li.button a {
+        padding: 10px 15px;
+        margin: 5px 0;
+    }
+    .button a {
+        background: rgb(25, 32, 43);
+        border: 1px #2f4d70 solid;
+        border-radius: 0.3em;
+    }
+    .button.secondary {
+        border: 0;
+    }
+    .button.secondary a {
+        background: transparent;
+        border: 1px #2f4d70 solid;
+    }
+    .button a:hover {
+        text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+        background: rgb(38, 58, 88);
+        border-color: #27486e;
+    }
+}
+
+#productDiv {
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    background-color: #19202b;
+    height: auto;
+    padding: 1.5rem;
+    width: 100%;
+    border: 1px #2f4d70 solid;
+    margin-top: 1em;
+    transition: all ease 0.3s;
+}
+
+#productDiv:hover {
+    background-color: #2f4d70;
+    border: 1px #19202b solid;
+    box-shadow: 0px 0px 29px 0px rgb(0 0 0 / 64%);
+}
+
+h1 {
+    margin-top: 1em;
+}
+
+#productDiv h1 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.productContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.xButton {
+    background-color: #243347;
+    padding: 0.76em;
+    border: 1px solid #2f4d70;
+    border-radius: 0.3em;
+    margin-bottom: 0.15em;
+    display: block;
+}
+
+.xButton:hover {
+    background-color: #3a5472;
+    border: 1px solid #243347;
+}
+
+.xButton:active {
+    margin: 0.08em;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        max-width: 90vw !important;
+    }
+    .productLeft {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .productRight {
+        width: 100% !important;
+    }
+}
+
+
+/* Desktop menu */
+
+@media all and (min-width: 960px) {
+    .menu {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        background: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+    .button {
+        order: 2;
+    }
+    .submenu-active .submenu {
+        border-bottom: 1px solid #2f4d70;
+        border-right: 1px solid #2f4d70;
+        border-left: 1px solid #2f4d70;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 69px;
+        min-width: 200px;
+        background: #191f26f2;
+        z-index: 5;
+    }
+    .toggle {
+        display: none;
+    }
+    .submenu-active {
+        border-radius: 0;
+    }
+}
