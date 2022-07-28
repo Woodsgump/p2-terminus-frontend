@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="lib/script.js" defer></script>
+    <script src="lib/store.js" defer></script>
+    <script src="lib/auth.js" defer></script>
+    <script src="assets/js/74de4910c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Fake Store Api Test</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1 style="margin-top:2em;">Terminus Store</h1>
+        <nav>
+            <ul class="menu">
+                <li class="logo">
+                    &nbsp;
+                </li>
+                <li class="item"><a id="storeNav" href="#">Store Home</a></li>
+                <li class="item"><a id="catNav" href="#">Categories</a></li>
+                </li>
+                <li class="item has-submenu">
+                    <a tabindex="0">My Account</a>
+                    <ul class="submenu">
+                        <li class="subitem"><a id="ordersNav" href="#">Order History</a></li>
+                        <li class="subitem"><a id="editAccountNav" href="#">Edit Information</a></li>
+                    </ul>
+                </li>
+
+                <li class="item button"><a id="loginNav" href="#">log in</a></li>
+                <li class="item button secondary"><a id="signupNav" href="#">register</a></li>
+                <li class="toggle">
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div id="loading">
+            Loading...
+        </div>
+        <!--Login, register-->
+        <div id="accountContainer">
+
+        </div>
+
+        <!---Store container --->
+        <div id="storeContainer">
+            <div id="products" cellpadding="15" style="margin-top:1em;">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
