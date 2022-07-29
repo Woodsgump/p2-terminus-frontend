@@ -440,12 +440,6 @@ p {
     margin-bottom: 0.5em;
 }
 
-#productDiv h1 {
-    font-size: 1.8rem;
-    text-align: left;
-    margin-bottom: 1em;
-}
-
 .productContainer:after {
     content: "";
     display: table;
@@ -487,8 +481,14 @@ button,
 }
 
 .logoPng {
-    width: 69%;
+    width: 76%;
     height: auto;
+}
+
+.productTitle {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -507,7 +507,7 @@ button,
         width: 100% !important;
     }
     .productTitle {
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
     }
     #productDiv {
         font-size: 0.9rem !important;
@@ -523,7 +523,7 @@ button,
         text-align: center;
     }
     .logoPng {
-        width: 49%;
+        width: 58%;
         height: auto;
     }
 }
