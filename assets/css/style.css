@@ -214,10 +214,22 @@ p {
     color: #386dff;
 }
 
+.singlePriceBox {
+    margin-top: 7em;
+    margin-right: 1em;
+    float: right;
+    font-size: larger;
+}
+
 
 /* !responsive mobile */
 
 @media only screen and (max-width: 600px) {
+    .singlePriceBox {
+        margin-top: 2em;
+        margin-right: unset !important;
+        float: unset !important;
+    }
     .column {
         width: 95%;
     }
@@ -232,6 +244,10 @@ p {
     }
     .searchInp {
         margin-top: 2px;
+    }
+    .xButton {
+        width: auto !important;
+        text-align: center;
     }
 }
 
@@ -283,6 +299,7 @@ p {
 
 #contentContainer {
     margin-top: 2em;
+    margin-bottom: 2em;
     width: 100%;
 }
 
@@ -313,6 +330,7 @@ p {
 
 #storeContainer {
     margin-top: 2em;
+    margin-bottom: 2em;
     width: 100%;
 }
 
