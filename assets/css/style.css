@@ -285,6 +285,19 @@ p {
     animation: storeload .5s ease 0s 1 normal forwards;
 }
 
+.productImage {
+    box-shadow: inset 0px 0 14px 0px #00000040, 0 0 5px 2px #00000038;
+    border: 1px #2f4d70 solid;
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5em;
+    background-position: center center;
+    background-color: #fff;
+    padding: 0.5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #productDiv {
     font-size: 1.2rem;
     border-radius: 0.3rem;
@@ -351,6 +364,12 @@ button,
     }
     .productRight {
         width: 100% !important;
+    }
+    .productTitle {
+        font-size: 1.2rem !important;
+    }
+    #productDiv {
+        font-size: 0.9rem !important;
     }
 }
 
