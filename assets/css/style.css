@@ -79,7 +79,7 @@ body {
 }
 
 .logoHover:hover {
-    animation: logohover .5s ease 0s 1 normal forwards;
+    animation: logohover .2s ease 0s 1 normal forwards;
 }
 
 @keyframes logohover {
@@ -329,7 +329,7 @@ p {
     transition: all ease 0.8s;
     display: inline-grid;
     width: 100%;
-    animation: loadLeft .5s ease 0s 1 normal forwards;
+    animation: loadLeft .2s ease 0s 1 normal forwards;
 }
 
 .formDiv:hover {
@@ -406,7 +406,7 @@ p {
     border: 1px #2f4d70 solid;
     margin-top: 1em;
     transition: all ease 0.3s;
-    animation: loadScale .3s ease 0s 1 normal forwards;
+    animation: loadScale .2s ease 0s 1 normal forwards;
 }
 
 #productDiv {
@@ -419,7 +419,7 @@ p {
     border: 1px #2f4d70 solid;
     margin-top: 1em;
     transition: all ease 0.3s;
-    animation: load .5s ease 0s 1 normal forwards;
+    animation: load .2s ease 0s 1 normal forwards;
 }
 
 #productDiv:hover {
