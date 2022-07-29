@@ -83,13 +83,12 @@ body {
 }
 
 @keyframes logohover {
-	0% {
-		transform: translateX(0);
-	}
-
-	100% {
-		transform: translateX(28px);
-	}
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(28px);
+    }
 }
 
 .searchInp {
@@ -118,7 +117,7 @@ a {
     list-style-type: none;
 }
 
-.logo {
+.search {
     font-size: 20px;
     padding: 7.5px 10px 7.5px 0;
     font-weight: 700;
@@ -128,12 +127,15 @@ a {
 .item {
     padding: 10px;
 }
-button{
-transition: all .2s ease;
+
+button {
+    transition: all .2s ease;
 }
-button:hover{
-background-color: #2f4d70;
+
+button:hover {
+    background-color: #2f4d70;
 }
+
 .item.button {
     padding: 9px 5px;
 }
@@ -277,7 +279,7 @@ p {
     .menu {
         justify-content: center;
     }
-    .logo {
+    .search {
         flex: 1;
     }
     .item.button {
@@ -484,6 +486,11 @@ button,
     clear: both;
 }
 
+.logoPng {
+    width: 69%;
+    height: auto;
+}
+
 @media only screen and (max-width: 1200px) {
     body {
         max-width: 90vw !important;
@@ -515,6 +522,10 @@ button,
         width: auto !important;
         text-align: center;
     }
+    .logoPng {
+        width: 49%;
+        height: auto;
+    }
 }
 
 
@@ -526,7 +537,7 @@ button,
         flex-wrap: nowrap;
         background: none;
     }
-    .logo {
+    .search {
         order: 0;
     }
     .item {
