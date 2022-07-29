@@ -184,6 +184,7 @@ a {
 .submenu-active {
     background-color: #191f26;
     border-radius: 0.8rem;
+    margin-bottom: 1em;
 }
 
 p {
@@ -366,10 +367,16 @@ button,
         width: 100% !important;
     }
     .productTitle {
-        font-size: 1.2rem !important;
+        font-size: 1.5rem !important;
     }
     #productDiv {
         font-size: 0.9rem !important;
+    }
+    #homeLogo {
+        font-size: 1.9rem;
+    }
+    .title {
+        font-size: 1.7rem;
     }
 }
 
