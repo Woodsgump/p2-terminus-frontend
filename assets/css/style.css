@@ -79,18 +79,17 @@ body {
 }
 
 .logoHover:hover {
-    animation: logohover 2s ease 0s 1 normal forwards;
+    animation: logohover 1s ease 0s 1 normal forwards;
 }
 
 @keyframes logohover {
-    0% {
-        transform: translateX(0);
-        transform: scale(1);
-    }
-    100% {
-        transform: translateX(100px);
-        transform: scale(1.1);
-    }
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(100px);
+	}
 }
 
 .searchInp {
