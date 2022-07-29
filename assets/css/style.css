@@ -79,7 +79,7 @@ body {
 }
 
 .logoHover:hover {
-    animation: logohover 1s ease 0s 1 normal forwards;
+    animation: logohover .5s ease 0s 1 normal forwards;
 }
 
 @keyframes logohover {
