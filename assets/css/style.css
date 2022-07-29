@@ -67,6 +67,11 @@ body {
     font-size: 3rem;
 }
 
+.searchInp {
+    margin-top: 0.44em;
+    width: 92%;
+}
+
 nav {
     margin-top: 1em;
     background: #243447;
@@ -184,7 +189,6 @@ a {
 .submenu-active {
     background-color: #191f26;
     border-radius: 0.8rem;
-    margin-bottom: 1em;
 }
 
 p {
@@ -215,6 +219,12 @@ p {
     }
     nav {
         margin-top: 1em !important;
+    }
+    .submenu-active {
+        margin-bottom: 1em;
+    }
+    .searchInp {
+        margin-top: 2px;
     }
 }
 
