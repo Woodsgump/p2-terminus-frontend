@@ -390,6 +390,20 @@ p {
     width: 100%;
 }
 
+.singleProductImage {
+    box-shadow: inset 0px 0 14px 0px #00000040, 0 0 5px 2px #00000038;
+    border: 1px #2f4d70 solid;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    width: 22vw;
+    height: 400px;
+    background-position: center center;
+    background-color: #fff;
+    padding: 0.5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .productImage {
     box-shadow: inset 0px 0 14px 0px #00000040, 0 0 5px 2px #00000038;
     border: 1px #2f4d70 solid;
@@ -525,6 +539,9 @@ button,
     .logoPng {
         width: 58%;
         height: auto;
+    }
+    .singleProductImage {
+        width: 100% !important;
     }
 }
 
