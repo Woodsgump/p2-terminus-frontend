@@ -5,12 +5,15 @@
 
     <!-- Meta tags -->
     <meta charset="UTF-8" />
+    <meta name="author" content="Team Terminus">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- JavaScript Libaries -->
     <script src="lib/script.js" defer></script>
     <script src="lib/store.js" defer></script>
-    <script src="lib/auth.js" defer></script>
+    <script src="lib/auth.js" async></script>
+    <script src="lib/login.js" async></script>
+    <script src="lib/orders.js" async></script>
 
     <!-- Third party icons from font awesome -->
     <script src="assets/js/74de4910c5.js" crossorigin="anonymous"></script>
@@ -18,7 +21,7 @@
     <!-- Style Assets -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Fake Store Api Test</title>
+    <title>The Terminus Store</title>
 </head>
 
 <body>
@@ -26,15 +29,17 @@
         Header Container with logo, navigation, etc.
      -->
     <div id="container">
-        <h1 style="margin-top:2em;">Terminus Store</h1>
+        <h1 id="homeLogo"><i class="fa-duotone fa-store"></i> Terminus
+            <font color="#2f4d70">Store</font>
+        </h1>
         <nav>
             <ul class="menu">
                 <li class="logo">
-                    &nbsp;
+                    <input style="margin-top: 0.44em;width:320px;" type="text" placeholder="Search inventory"> <i style="margin-left:-2em;margin-top:8px;opacity:0.7;color:#426a97;" class="fa-solid fa-magnifying-glass"></i>
                 </li>
 
                 <!-- Regular menu items -->
-                <li class="item"><a id="storeNav" href="#">Store Home</a></li>
+                <li class="item"><a id="storeNav" href="#">View Products</a></li>
                 <li class="item"><a id="catNav" href="#">Categories</a></li>
 
                 <!-- Submenu -->

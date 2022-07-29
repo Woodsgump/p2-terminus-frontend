@@ -1,9 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-@font-face {
-    font-family: "WoR";
-    src: url("Jackport_Regular_NCV.woff") format("woff");
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 :root {
     color-scheme: dark;
 }
@@ -43,29 +38,37 @@ input[type="text"],
 input[type="password"],
 input[type="email"] {
     font-size: 1rem;
-    font-weight: 900;
-    padding: 0.5em !important;
+    padding: 0.75em !important;
     background: rgb(25, 32, 43);
     color: #426a97;
     border: 1px #2f4d70 solid;
     border-radius: 0.3em;
+    outline: none;
 }
 
 ::placeholder {
     color: #426a978a;
-    font-style: italic;
+    font-weight: 400;
+    opacity: 0.7;
 }
 
 body {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: rgb(25, 32, 43);
     color: #e1e1e1;
     max-width: 75vw;
     margin: auto;
 }
 
+#homeLogo {
+    margin-top: 2em;
+    cursor: pointer;
+    user-select: none;
+    font-size: 3rem;
+}
+
 nav {
-    margin-top: 3em;
+    margin-top: 1em;
     background: #243447;
     padding: 0 15px;
     border: 1px solid #2f4d70;
@@ -261,11 +264,25 @@ p {
 }
 
 #storeContainer {
+    margin-top: 2em;
     width: 100%;
+    animation: storeload .5s ease 0s 1 normal forwards;
+}
+
+@keyframes storeload {
+    0% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #productContainer {
     width: 100%;
+    animation: storeload .5s ease 0s 1 normal forwards;
 }
 
 #productDiv {
@@ -302,13 +319,16 @@ p {
     clear: both;
 }
 
+button,
 .xButton {
     background-color: #243347;
     padding: 0.76em;
     border: 1px solid #2f4d70;
     border-radius: 0.3em;
     margin-bottom: 0.15em;
+    user-select: none;
     display: block;
+    cursor: pointer;
 }
 
 .xButton:hover {
