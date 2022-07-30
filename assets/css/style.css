@@ -83,10 +83,6 @@ body {
     transform: scale(0.98);
 }
 
-.logoHover:hover {
-    animation: logohover .2s ease 0s 1 normal forwards;
-}
-
 @keyframes logohover {
     0% {
         transform: translateX(0);
