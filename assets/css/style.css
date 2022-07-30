@@ -76,6 +76,11 @@ body {
 
 .logoHover {
     display: inline-block;
+    transition: .2s all;
+}
+
+#logoHover:active {
+    transform: scale(0.98);
 }
 
 .logoHover:hover {
