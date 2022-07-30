@@ -9,6 +9,14 @@
     margin: 0;
 }
 
+#logoutNav {
+    display: none;
+}
+
+#accountNav {
+    display: none;
+}
+
 input[type="submit"] {
     font-size: 1rem;
     padding: 0.7em !important;
@@ -74,6 +82,24 @@ body {
     font-size: 3rem;
 }
 
+.logoHover {
+    display: inline-block;
+    transition: .2s all;
+}
+
+.logoHover:active {
+    transform: scale(0.98);
+}
+
+@keyframes logohover {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(28px);
+    }
+}
+
 .searchInp {
     margin-top: 0.44em;
     width: 92%;
@@ -85,7 +111,7 @@ nav {
     padding: 0 15px;
     border: 1px solid #2f4d70;
     border-radius: 0.3em;
-    box-shadow: inset 0px 0 14px 0px #00000040, 0 0 5px 2px #00000038;
+    /*box-shadow: inset 0px 0 14px 0px #00000040, 0 0 5px 2px #00000038;*/
     user-select: none;
 }
 
@@ -100,7 +126,7 @@ a {
     list-style-type: none;
 }
 
-.logo {
+.search {
     font-size: 20px;
     padding: 7.5px 10px 7.5px 0;
     font-weight: 700;
@@ -109,6 +135,14 @@ a {
 
 .item {
     padding: 10px;
+}
+
+button {
+    transition: all .2s ease;
+}
+
+button:hover {
+    background-color: #2f4d70;
 }
 
 .item.button {
@@ -254,7 +288,7 @@ p {
     .menu {
         justify-content: center;
     }
-    .logo {
+    .search {
         flex: 1;
     }
     .item.button {
@@ -302,7 +336,7 @@ p {
 .formDiv {
     font-size: 1.2rem;
     border-radius: 0.3rem;
-    background-color: #19202b;
+    background-color: #252f40;
     height: auto;
     padding: 1.5rem;
     width: 100%;
@@ -311,13 +345,13 @@ p {
     transition: all ease 0.8s;
     display: inline-grid;
     width: 100%;
-    animation: loadLeft .5s ease 0s 1 normal forwards;
+    animation: loadLeft .2s ease 0s 1 normal forwards;
 }
 
 .formDiv:hover {
     background: #243447;
     border: 1px #19202b solid;
-    box-shadow: 0px 0px 29px 0px rgb(0 0 0 / 64%);
+    /*box-shadow: 0px 0px 29px 0px rgb(0 0 0 / 64%);*/
 }
 
 .formDiv>input {
@@ -365,6 +399,20 @@ p {
     width: 100%;
 }
 
+.singleProductImage {
+    box-shadow: inset 0px 0 14px 0px #00000040, 0 0 5px 2px #00000038;
+    border: 1px #2f4d70 solid;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    width: 22vw;
+    height: 400px;
+    background-position: center center;
+    background-color: #fff;
+    padding: 0.5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .productImage {
     box-shadow: inset 0px 0 14px 0px #00000040, 0 0 5px 2px #00000038;
     border: 1px #2f4d70 solid;
@@ -388,7 +436,7 @@ p {
     border: 1px #2f4d70 solid;
     margin-top: 1em;
     transition: all ease 0.3s;
-    animation: loadScale .3s ease 0s 1 normal forwards;
+    animation: loadScale .2s ease 0s 1 normal forwards;
 }
 
 #productDiv {
@@ -401,24 +449,18 @@ p {
     border: 1px #2f4d70 solid;
     margin-top: 1em;
     transition: all ease 0.3s;
-    animation: load .5s ease 0s 1 normal forwards;
+    animation: load .2s ease 0s 1 normal forwards;
 }
 
 #productDiv:hover {
     background: #243447;
     border: 1px #19202b solid;
-    box-shadow: 0px 0px 29px 0px rgb(0 0 0 / 64%);
+    /*box-shadow: 0px 0px 29px 0px rgb(0 0 0 / 64%);*/
 }
 
 .title {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-}
-
-#productDiv h1 {
-    font-size: 1.8rem;
-    text-align: left;
-    margin-bottom: 1em;
 }
 
 .productContainer:after {
@@ -461,6 +503,17 @@ button,
     clear: both;
 }
 
+.logoPng {
+    width: 76%;
+    height: auto;
+}
+
+.productTitle {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
 @media only screen and (max-width: 1200px) {
     body {
         max-width: 90vw !important;
@@ -477,7 +530,7 @@ button,
         width: 100% !important;
     }
     .productTitle {
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
     }
     #productDiv {
         font-size: 0.9rem !important;
@@ -492,6 +545,13 @@ button,
         width: auto !important;
         text-align: center;
     }
+    .logoPng {
+        width: 80vw;
+        height: auto;
+    }
+    .singleProductImage {
+        width: 100% !important;
+    }
 }
 
 
@@ -503,7 +563,7 @@ button,
         flex-wrap: nowrap;
         background: none;
     }
-    .logo {
+    .search {
         order: 0;
     }
     .item {

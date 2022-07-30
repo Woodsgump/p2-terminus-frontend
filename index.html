@@ -11,9 +11,11 @@
     <!-- JavaScript Libaries -->
     <script src="lib/script.js" defer></script>
     <script src="lib/store.js" defer></script>
+    <!--
     <script src="lib/auth.js" async></script>
     <script src="lib/login.js" async></script>
     <script src="lib/orders.js" async></script>
+    -->
 
     <!-- Third party icons from font awesome -->
     <script src="assets/js/74de4910c5.js" crossorigin="anonymous"></script>
@@ -29,22 +31,28 @@
         Header Container with logo, navigation, etc.
      -->
     <div id="container">
-        <h1 id="homeLogo"><i class="fa-duotone fa-store"></i> Terminus
-            <font color="#2f4d70">Store</font>
+        <h1 id="homeLogo">
+            <div class="logoHover">
+                <i class="fa-duotone fa-store"></i> Terminus
+                <font color="#2f4d70">Store</font>
+                <!---<img class="logoPng" src="assets/images/logo.png">--->
+            </div>
         </h1>
         <nav>
             <ul class="menu">
                 <li class="logo">
                     <!-- Probably where a theoretical search bar would go -->
+                <li class="search">
                     <input class="searchInp" type="text" placeholder="Search inventory"> <i style="margin-left:-2em;margin-top:8px;opacity:0.7;color:#426a97;" class="fa-solid fa-magnifying-glass"></i>
                 </li>
 
                 <!-- Regular menu items -->
                 <li class="item"><a id="storeNav" href="assets/html/store.html">View Products</a></li>
                 <li class="item"><a id="catNav" href="#">Categories</a></li>
+                <li class="item"><a id="storeNav" href="#">All Products</a></li>
 
                 <!-- Submenu -->
-                <li class="item has-submenu">
+                <li id="accountNav" class="item has-submenu">
                     <a tabindex="0">My Account</a>
                     <ul class="submenu">
                         <li class="subitem"><a id="ordersNav" href="assets/html/orders.html">Order History</a></li>
@@ -55,6 +63,9 @@
                 <!-- Login/Signup Buttons -->
                 <li class="item button"><a id="loginNav" href="assets/html/login.html">Log in</a></li>
                 <li class="item button secondary"><a id="signupNav" href="assets/html/signup.html">Sign-Up!</a></li>
+                <li class="item button"><a id="loginNav" href="#">Log in</a></li>
+                <li class="item button"><a id="logoutNav" href="#">Log out</a></li>
+                <li class="item button secondary"><a id="signupNav" href="#">Sign-Up!</a></li>
                 <li class="toggle">
                     <a href="#"><i class="fas fa-bars"></i></a>
                 </li>
