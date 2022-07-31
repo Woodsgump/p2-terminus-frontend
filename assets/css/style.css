@@ -476,16 +476,19 @@ p {
 }
 
 .easy1 {
+    opacity: 0;
     transition: none !important;
     animation: fadetop .2s ease 1s 1 normal forwards;
 }
 
 .easy2 {
+    opacity: 0;
     transition: none !important;
     animation: fadetop .2s ease 2s 1 normal forwards;
 }
 
 .easy3 {
+    opacity: 0;
     transition: none !important;
     animation: fadetop .2s ease 3s 1 normal forwards;
 }
