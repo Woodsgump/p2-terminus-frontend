@@ -474,6 +474,29 @@ p {
     animation: fadebottom 1s ease 0s 1 normal forwards;
 }
 
+.fa-duotone fa-circle-1 {
+    animation: fadetop 1s ease 0s 1 normal forwards;
+}
+
+.fa-duotone fa-circle-2 {
+    animation: fadetop 1.3s ease 0s 1 normal forwards;
+}
+
+.fa-duotone fa-circle-3 {
+    animation: fadetop 1.6s ease 0s 1 normal forwards;
+}
+
+@keyframes fadetop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes fadebottom {
     0% {
         opacity: 0;
