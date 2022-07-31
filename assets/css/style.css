@@ -465,7 +465,8 @@ p {
 }
 
 .easyScreenTop {
-    margin-top: 2em;
+    margin-top: 7em;
+    margin-left: 4em;
     animation: faderight 1s ease 0s 1 normal forwards;
 }
 
