@@ -478,19 +478,19 @@ p {
 .easy1 {
     opacity: 0;
     transition: none !important;
-    animation: fadetop .2s ease 0.5s 1 normal forwards;
+    animation: fadetop .3s ease 0.5s 1 normal forwards;
 }
 
 .easy2 {
     opacity: 0;
     transition: none !important;
-    animation: fadetop .2s ease 1s 1 normal forwards;
+    animation: fadetop .3s ease 0.8s 1 normal forwards;
 }
 
 .easy3 {
     opacity: 0;
     transition: none !important;
-    animation: fadetop .2s ease 1.5s 1 normal forwards;
+    animation: fadetop .3s ease 1.1s 1 normal forwards;
 }
 
 @keyframes fadetop {
