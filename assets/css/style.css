@@ -471,7 +471,8 @@ p {
 }
 
 .easyScreenBottom {
-    margin-top: 3.2em;
+    /*margin-top: 3.2em;*/
+    text-align: right;
     animation: fadebottom 1s ease 0s 1 normal forwards;
 }
 
