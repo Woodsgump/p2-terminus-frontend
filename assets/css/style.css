@@ -470,23 +470,23 @@ p {
 }
 
 .easyScreenBottom {
-    margin-top: 1.6em;
+    margin-top: 2.5em;
     animation: fadebottom 1s ease 0s 1 normal forwards;
 }
 
 .easy1 {
     transition: none !important;
-    animation: fadetop 2s ease 0s 1 normal forwards;
+    animation: fadetop 1.5s ease 0s 1 normal forwards;
 }
 
 .easy2 {
     transition: none !important;
-    animation: fadetop 2.5s ease 0s 1 normal forwards;
+    animation: fadetop 2s ease 0s 1 normal forwards;
 }
 
 .easy3 {
     transition: none !important;
-    animation: fadetop 3s ease 0s 1 normal forwards;
+    animation: fadetop 2.5s ease 0s 1 normal forwards;
 }
 
 @keyframes fadetop {
