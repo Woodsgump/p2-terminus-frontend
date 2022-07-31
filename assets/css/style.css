@@ -157,6 +157,10 @@ button:hover {
 
 /* Mobile menu */
 
+.feat {
+    float: right;
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -437,6 +441,13 @@ p {
     margin-top: 1em;
     transition: all ease 0.3s;
     animation: loadScale .2s ease 0s 1 normal forwards;
+}
+
+.creds {
+    min-width: 110px;
+    text-align: center;
+    display: inline-block;
+    float: right;
 }
 
 #productDiv {
