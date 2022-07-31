@@ -343,7 +343,8 @@ p {
 }
 
 .formDiv {
-    background: linear-gradient(198deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 58%);
+    position: relative;
+    background-image: linear-gradient(198deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 58%);
     padding: 2em;
     border-top-left-radius: 0.3em;
     font-size: 1.2rem;
@@ -351,15 +352,31 @@ p {
     padding: 1.5rem;
     width: 100%;
     margin-top: 1em;
-    transition: all ease 0.8s;
     display: inline-grid;
     width: 100%;
     animation: loadLeft .2s ease 0s 1 normal forwards;
-    transition: all .2s ease;
+}
+
+.formDiv::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(29deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 58%) !important;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+.formDiv:hover::before {
+    opacity: 1;
 }
 
 .formDiv2 {
-    background: linear-gradient(29deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 75%) !important;
+    position: relative;
+    background-image: linear-gradient(29deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 75%) !important;
     padding: 2em;
     border-top-left-radius: 0.3em;
     font-size: 1.2rem;
@@ -367,21 +384,13 @@ p {
     padding: 1.5rem;
     width: 100%;
     margin-top: 1em;
-    transition: all ease 0.8s;
     display: inline-grid;
     width: 100%;
     animation: loadLeft .2s ease 0s 1 normal forwards;
 }
 
-.formDiv:hover {
-    background: linear-gradient(29deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 58%);
-    transition: background 1000ms linear;
-    /*box-shadow: 0px 0px 29px 0px rgb(0 0 0 / 64%);*/
-}
-
 .formDiv2:hover {
-    background: linear-gradient(198deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 75%);
-    transition: background 1000ms linear;
+    background-image: linear-gradient(198deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 75%) !important;
 }
 
 .formDiv>input {
