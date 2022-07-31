@@ -1,69 +1,9 @@
-<head>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
 <div class="formDiv">
-    <style>
-        :root{
-            color-scheme: dark;
-        }
-        * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
-        input[type="text"],
-        input[type="password"],
-        input[type="email"] {
-            font-size: 1rem;
-            padding: 0.75em !important;
-            background: rgb(25, 32, 43);
-            color: #426a97;
-            border: 1px #2f4d70 solid;
-            border-radius: 0.3em;
-            outline: none;
-            transition: all ease 0.3s;
-        }
-        input[type="text"]:hover,
-        input[type="password"]:hover,
-        input[type="email"]:hover {
-            background: rgb(32, 40, 53);
-        }
-        ::placeholder {
-            color: #426a978a;
-            font-weight: 400;
-            opacity: 0.7;
-        }
-        .formDiv {
-            font-size: 1.2rem;
-            border-radius: 0.3rem;
-            background-color: #19202b;
-            height: auto;
-            padding: 1.5rem;
-            width: 100%;
-            border: 1px #2f4d70 solid;
-            margin-top: 1em;
-            transition: all ease 0.8s;
-            display: inline-grid;
-            width: 100%;
-            animation: loadLeft .5s ease 0s 1 normal forwards;
-        }
-        .formDiv:hover {
-            background: #243447;
-            border: 1px #19202b solid;
-            box-shadow: 0px 0px 29px 0px rgb(0 0 0 / 64%);
-        }
-        .formDiv>input {
-            margin: 1em;
-        }
-        </style>
-    <!--                How to get back to index.html                         -->
-    <button id="backBtn"><i class="fa-duotone far-arrow-left"></i>Back to home</button>
     <h1 class="title">Register an account <i style="font-size:smaller;margin-left:0.7em;" class="fa-duotone fa-user-plus"></i></h1>
-    <span id="msg"></span>
     <input type="text" id="fname" placeholder="First Name"><br>
     <input type="text" id="lname" placeholder="Last Name"><br>
     <input type="email" id="email" placeholder="E-mail"><br>
     <input type="text" id="username" placeholder="Username"><br>
     <input type="password" id="password" placeholder="Password"><br>
-    <button onclick="signUp();" id="signupBtn">Sign Up!</button>
+    <button style="padding: 1em;font-size: unset;" id="signupBtn">Sign Up!</button>
 </div>
