@@ -342,8 +342,9 @@ p {
     width: 85%;
 }
 
-.formDiv {
-    background: linear-gradient(155deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 42%);
+.formDiv,
+.formDiv2 {
+    background: linear-gradient(198deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 58%);
     padding: 2em;
     border-top-left-radius: 0.3em;
     font-size: 1.2rem;
@@ -355,6 +356,14 @@ p {
     display: inline-grid;
     width: 100%;
     animation: loadLeft .2s ease 0s 1 normal forwards;
+}
+
+.gradient2 {
+    background: linear-gradient(29deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 44%) !important;
+}
+
+.gradient3 {
+    background: linear-gradient(29deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 44%) !important;
 }
 
 .formDiv:hover {
