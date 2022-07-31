@@ -334,7 +334,7 @@ p {
 }
 
 .mainDiv {
-    margin-top: 2em;
+    margin-top: 4em;
     animation: load .2s ease 0s 1 normal forwards;
     width: 85%;
 }
@@ -478,19 +478,19 @@ p {
 .easy1 {
     opacity: 0;
     transition: none !important;
-    animation: fadetop .2s ease 1s 1 normal forwards;
+    animation: fadetop .2s ease 0.5s 1 normal forwards;
 }
 
 .easy2 {
     opacity: 0;
     transition: none !important;
-    animation: fadetop .2s ease 2s 1 normal forwards;
+    animation: fadetop .2s ease 1s 1 normal forwards;
 }
 
 .easy3 {
     opacity: 0;
     transition: none !important;
-    animation: fadetop .2s ease 3s 1 normal forwards;
+    animation: fadetop .2s ease 1.5s 1 normal forwards;
 }
 
 @keyframes fadetop {
@@ -629,6 +629,9 @@ button,
     }
     .singleProductImage {
         width: 100% !important;
+    }
+    .mainDiv {
+        width: 100%;
     }
 }
 
