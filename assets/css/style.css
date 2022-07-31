@@ -475,15 +475,15 @@ p {
 }
 
 .easy1 {
-    animation: fadetop 1s ease 0s 1 normal forwards;
+    animation: fadetop 2s ease 0s 1 normal forwards;
 }
 
 .easy2 {
-    animation: fadetop 1.3s ease 0s 1 normal forwards;
+    animation: fadetop 3s ease 0s 1 normal forwards;
 }
 
 .easy3 {
-    animation: fadetop 1.6s ease 0s 1 normal forwards;
+    animation: fadetop 4s ease 0s 1 normal forwards;
 }
 
 @keyframes fadetop {
