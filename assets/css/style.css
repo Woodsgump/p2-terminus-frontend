@@ -447,7 +447,6 @@ p {
 }
 
 #productDiv {
-    font-size: 1.2rem;
     border-radius: 0.3rem;
     background-color: #19202b;
     height: auto;
@@ -494,7 +493,7 @@ button,
 }
 
 .xButton:active {
-    transform: scale(1.05);
+    transform: scale(0.98);
 }
 
 .column {
