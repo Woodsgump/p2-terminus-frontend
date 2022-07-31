@@ -335,7 +335,7 @@ p {
 
 .mainDiv {
     margin-top: 2em;
-    animation: loadLeft .2s ease 0s 1 normal forwards;
+    animation: load .2s ease 0s 1 normal forwards;
 }
 
 .formDiv {
