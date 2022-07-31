@@ -157,10 +157,6 @@ button:hover {
 
 /* Mobile menu */
 
-.right {
-    float: right;
-}
-
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -525,7 +521,15 @@ button,
     margin-bottom: 1em;
 }
 
+.right {
+    margin-right: 1em;
+}
+
 @media only screen and (max-width: 1200px) {
+    .right {
+        float: right;
+        margin-right: unset !important;
+    }
     body {
         max-width: 90vw !important;
     }
