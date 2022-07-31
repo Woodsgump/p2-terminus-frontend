@@ -108,7 +108,7 @@ body {
 nav {
     margin-top: 1em;
     /*background: #243447;*/
-    background-image: linear-gradient(90deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(90deg, rgba(36, 52, 71, 1) 0%, rgba(0, 0, 0, 0) 120%);
     padding: 0 15px;
     border: 1px solid #2f4d70;
     border-radius: 0.3em;
@@ -560,7 +560,7 @@ p {
     font-size: 7rem;
     margin: 1em;
     opacity: 0;
-    animation: fadein 1s ease 1.2s 1 normal forwards;
+    animation: fadein 1s ease 0.5s 1 normal forwards;
 }
 
 .easy2 {
@@ -573,7 +573,7 @@ p {
     font-size: 7rem;
     margin: 1em;
     opacity: 0;
-    animation: fadein 1s ease 1.7s 1 normal forwards;
+    animation: fadein 1s ease 0.8s 1 normal forwards;
 }
 
 .easy3 {
@@ -586,7 +586,7 @@ p {
     font-size: 7rem;
     margin: 1em;
     opacity: 0;
-    animation: fadein 1s ease 2.0s 1 normal forwards;
+    animation: fadein 1s ease 1.1s 1 normal forwards;
 }
 
 @keyframes fadein {
