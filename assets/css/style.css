@@ -477,17 +477,17 @@ p {
 
 .easy1 {
     transition: none !important;
-    animation: fadetop 1.5s ease 0s 1 normal forwards;
+    animation: fadetop .2s ease 1s 1 normal forwards;
 }
 
 .easy2 {
     transition: none !important;
-    animation: fadetop 2.5s ease 0s 1 normal forwards;
+    animation: fadetop .2s ease 2s 1 normal forwards;
 }
 
 .easy3 {
     transition: none !important;
-    animation: fadetop 3.5s ease 0s 1 normal forwards;
+    animation: fadetop .2s ease 3s 1 normal forwards;
 }
 
 @keyframes fadetop {
