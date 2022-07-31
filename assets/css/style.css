@@ -474,15 +474,15 @@ p {
     animation: fadebottom 1s ease 0s 1 normal forwards;
 }
 
-.fa-duotone fa-circle-1 {
+.easy1 {
     animation: fadetop 1s ease 0s 1 normal forwards;
 }
 
-.fa-duotone fa-circle-2 {
+.easy2 {
     animation: fadetop 1.3s ease 0s 1 normal forwards;
 }
 
-.fa-duotone fa-circle-3 {
+.easy3 {
     animation: fadetop 1.6s ease 0s 1 normal forwards;
 }
 
