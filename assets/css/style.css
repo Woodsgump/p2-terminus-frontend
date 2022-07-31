@@ -336,6 +336,7 @@ p {
 .mainDiv {
     margin-top: 2em;
     animation: load .2s ease 0s 1 normal forwards;
+    width: 85%;
 }
 
 .formDiv {
@@ -463,8 +464,23 @@ p {
     animation: load .2s ease 0s 1 normal forwards;
 }
 
-.easyScreen {
+.easyScreenTop {
     animation: faderight 1s ease 0s 1 normal forwards;
+}
+
+.easyScreenBottom {
+    animation: fadebottom 1s ease 0s 1 normal forwards;
+}
+
+@keyframes fadebottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes faderight {
