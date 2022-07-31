@@ -482,18 +482,18 @@ p {
 
 .easy2 {
     transition: none !important;
-    animation: fadetop 2s ease 0s 1 normal forwards;
+    animation: fadetop 2.5s ease 0s 1 normal forwards;
 }
 
 .easy3 {
     transition: none !important;
-    animation: fadetop 2.5s ease 0s 1 normal forwards;
+    animation: fadetop 3.5s ease 0s 1 normal forwards;
 }
 
 @keyframes fadetop {
     0% {
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translateY(-250px);
     }
     100% {
         opacity: 1;
