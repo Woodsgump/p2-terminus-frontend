@@ -333,6 +333,11 @@ p {
     width: 100%;
 }
 
+.mainDiv {
+    margin-top: 2em;
+    animation: loadLeft .2s ease 0s 1 normal forwards;
+}
+
 .formDiv {
     font-size: 1.2rem;
     border-radius: 0.3rem;
