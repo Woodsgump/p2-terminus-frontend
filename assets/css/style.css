@@ -17,6 +17,10 @@
     display: none;
 }
 
+#backBtn {
+    margin-right: 0.8em;
+}
+
 input[type="submit"] {
     font-size: 1rem;
     padding: 0.7em !important;
