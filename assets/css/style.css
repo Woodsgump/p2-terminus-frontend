@@ -132,6 +132,7 @@ a {
 }
 
 .search {
+    margin-bottom: 7px;
     font-size: 20px;
     padding: 7.5px 10px 7.5px 0;
     font-weight: 700;
@@ -294,6 +295,7 @@ p {
         justify-content: center;
     }
     .search {
+        margin-bottom: unset;
         flex: 1;
     }
     .item.button {
