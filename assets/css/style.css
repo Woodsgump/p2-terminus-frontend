@@ -350,6 +350,10 @@ p {
     animation: load .2s ease 0s 1 normal forwards;
 }
 
+#cartContainer {
+    animation: load .2s ease 0s 1 normal forwards;
+}
+
 .mainDiv::before {
     position: absolute;
     content: "";
