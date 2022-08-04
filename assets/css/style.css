@@ -808,3 +808,7 @@ button,
 .disabled {
     pointer-events: none;
 }
+
+#cartBtn {
+    text-align: center;
+}
