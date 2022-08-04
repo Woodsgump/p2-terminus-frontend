@@ -14,7 +14,7 @@
 }
 
 #accountNav {
-    /*display: none;*/
+    display: none;
 }
 
 #backBtn {
@@ -785,6 +785,11 @@ button,
     .submenu-active {
         border-radius: 0;
     }
+}
+
+#cartContainer {
+    display: none;
+    width: 100%;
 }
 
 #storeBtnContainer {
