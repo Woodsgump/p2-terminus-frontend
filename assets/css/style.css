@@ -804,3 +804,7 @@ button,
     margin-bottom: 2em;
     width: 100%;
 }
+
+.disabled {
+    pointer-events: none;
+}
