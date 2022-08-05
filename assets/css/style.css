@@ -335,7 +335,7 @@ p {
 }
 
 #contentContainer {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 2em;
     width: 100%;
 }
@@ -452,7 +452,7 @@ p {
 }
 
 #storeContainer {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 2em;
     width: 100%;
 }
@@ -804,26 +804,25 @@ button,
 }
 
 #cartContainer {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 2em;
     width: 100%;
     display: none;
 }
 
 #orderContainer {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 2em;
     width: 100%;
     display: none;
 }
 
-#storeBtnContainer {
-    width: 100%;
-    display: none;
+#buttons {
+    margin-top: 1em;
 }
 
 #storeItemContainer {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 2em;
     width: 100%;
 }
