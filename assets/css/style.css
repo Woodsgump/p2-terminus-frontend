@@ -354,6 +354,10 @@ p {
     animation: load .2s ease 0s 1 normal forwards;
 }
 
+#orderContainer {
+    animation: load .2s ease 0s 1 normal forwards;
+}
+
 .mainDiv::before {
     position: absolute;
     content: "";
@@ -792,6 +796,13 @@ button,
 }
 
 #cartContainer {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+    display: none;
+}
+
+#orderContainer {
     margin-top: 2em;
     margin-bottom: 2em;
     width: 100%;

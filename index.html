@@ -15,9 +15,7 @@
 
     <script src="lib/auth.js" defer></script>
     <script src="lib/login.js" defer></script>
-    <!--
-    <script src="lib/orders.js" async></script>
-    -->
+    <script src="lib/orders.js" defer></script>
 
     <!-- Third party icons from font awesome -->
     <script src="assets/js/74de4910c5.js" crossorigin="anonymous"></script>
@@ -52,7 +50,7 @@
                 <li id="accountNav" class="item has-submenu">
                     <a tabindex="0">My Account</a>
                     <ul class="submenu">
-                        <li class="subitem"><a id="ordersNav" href="#">Order History</a></li>
+                        <li class="subitem"><a onclick="showOrders()" id="ordersNav" href="#">Order History</a></li>
                         <li class="subitem"><a id="editAccountNav" href="#">Edit Information</a></li>
                     </ul>
                 </li>
@@ -114,6 +112,8 @@
         <div id="storeItemContainer"></div>
 
         <div id="cartContainer"></div>
+
+        <div id="orderContainer"></div>
     </div>
 </body>
 
