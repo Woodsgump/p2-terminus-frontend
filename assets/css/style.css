@@ -674,6 +674,14 @@ button,
     cursor: pointer;
 }
 
+#topLoginBtn {
+    display: none;
+}
+
+#topSignupBtn {
+    display: none;
+}
+
 .xButton:hover {
     background-color: #3a5472;
     border: 1px solid #243347;
