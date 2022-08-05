@@ -335,7 +335,6 @@ p {
 }
 
 #contentContainer {
-    margin-top: 1em;
     margin-bottom: 2em;
     width: 100%;
 }
@@ -452,7 +451,6 @@ p {
 }
 
 #storeContainer {
-    margin-top: 1em;
     margin-bottom: 2em;
     width: 100%;
 }
@@ -804,14 +802,12 @@ button,
 }
 
 #cartContainer {
-    margin-top: 1em;
     margin-bottom: 2em;
     width: 100%;
     display: none;
 }
 
 #orderContainer {
-    margin-top: 1em;
     margin-bottom: 2em;
     width: 100%;
     display: none;
@@ -822,7 +818,6 @@ button,
 }
 
 #storeItemContainer {
-    margin-top: 1em;
     margin-bottom: 2em;
     width: 100%;
 }
