@@ -795,6 +795,10 @@ button,
     }
 }
 
+#topLogoutBtn {
+    display: none;
+}
+
 #cartContainer {
     margin-top: 2em;
     margin-bottom: 2em;
